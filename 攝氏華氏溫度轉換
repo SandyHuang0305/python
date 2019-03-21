@@ -1,0 +1,7 @@
+#攝氏華氏溫度轉換
+
+celsius = float(input('請輸入攝氏溫度:'))
+
+#計算華氏溫度
+fahrenheit = (celsius * 1.8) + 32
+print(celsius,'攝氏溫度轉成華氏溫度為', fahrenheit) 
