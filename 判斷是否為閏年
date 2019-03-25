@@ -1,0 +1,12 @@
+#判斷是否為閏年
+year = int(input('請輸入一個年份:'))
+if (year % 4) == 0:
+    if (year % 100) ==0:
+        if (year % 400) ==0:
+            print(year, '是閏年')
+        else:
+            print(year, '不是閏年')
+    else:
+        print(year, '不是閏年')
+else:
+    print(year, '不是閏年')
