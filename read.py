@@ -1,3 +1,5 @@
+import time #使用time 模組
+
 data = []
 count = 0
 
@@ -17,6 +19,7 @@ for d in data: #把每筆資料命名為d
 print('每筆留言的平均長度是',sum_len / len(data)) 
 
 #計算留言中最常出現的字
+start_time = time.time()
 wc = {} #製作計數的dict
 for d in data:#拿出清單中的字
     words = d.split(' ')
@@ -30,6 +33,8 @@ for d in data:#拿出清單中的字
 for word in wc:
     if wc[word] > 100000:
         print(word, wc[word])
+end_time = time.time()   
+print('花了', end_time - start_time, '秒')  #使用time模組當成計時功能   
 print(len(wc))#確認字典中有幾個key  
 
 #讓使用者查找單字
