@@ -1,15 +1,15 @@
 import time #使用time 模組
+import progressbar
 
 data = []
 count = 0
-
+bar = progressbar.ProgressBar(max_value = 1000000)
 
 with open('reviews.txt', 'r') as f:#讀檔
     for line in f:
         data.append(line)
         count += 1
-        if count % 1000 == 0: # %是用來求餘數，即count分之1000
-            print(len(data))
+        bar.update(count)
 print('檔案讀取完了,總共有',len(data), '筆資料')
 
 #算平均長度
