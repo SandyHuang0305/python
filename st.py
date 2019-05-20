@@ -1,5 +1,5 @@
 #class 類別
-class Student:
+class Student:#class第一個字是大寫開頭
     def __init__(self, name, score):#初始化
         self.name = name
         self.score = score
