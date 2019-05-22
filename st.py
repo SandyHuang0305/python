@@ -16,8 +16,8 @@ class Student:#class第一個字是大寫開頭
         print('終於能睡覺了...')
 s1 = Student('zero', 100)
 s2 = Student('sky', 95)
-print(s1.name, s1.score) 
-print(s2.name, s2.score)
 
-s2.study()
-print(s2.name, s2.score)  
+student = [s1, s2] 
+
+for s in student:
+    print(s.name, '的分數是', s.score)
