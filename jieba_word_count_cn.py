@@ -1,6 +1,6 @@
 #中文詞頻統計
 import jieba
-txt = open("WuMing1.txt", 'r', encoding='utf-8').read() #讀檔
+txt = open("文件名稱", 'r', encoding='utf-8').read() #讀檔
 words = jieba.lcut(txt) #切割文檔的文字
 counts = {} #設置字典
 for word in words: #遍例文檔中所有文字並計數
